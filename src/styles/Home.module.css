@@ -1,0 +1,34 @@
+
+.container {
+    min-height: 100vh;
+    padding-right:0.5rem;
+    margin-left:0 ;
+  }
+  
+  #mapContainer {
+    width: 100%;
+    height: 850px;
+  }
+  .mapbox{
+    /* border:1px solid black; */
+    position: relative;
+  }
+  .countrySelectBox{
+    position: absolute;
+    height: 100%;
+    width: 270px;
+    z-index: 111;
+    /* background-color: #fff; */
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+    backdrop-filter: blur(10px); /* Apply blur to the background */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border to enhance the effect */
+    padding: 20px; /* Some padding inside the div */
+  }
+
+  .sideBar{
+    width: 250px;
+   
+  }

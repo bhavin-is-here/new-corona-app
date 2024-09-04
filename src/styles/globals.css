@@ -1,0 +1,281 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "FiraGo";
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.mapbox {
+  position: relative;
+}
+
+.logoBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 130px 15px 20px;
+  border-bottom: 1px solid rgba(46, 38, 38, 0.272);
+}
+
+.sideBar {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Prevent scrolling of the sidebar itself */
+
+  
+}
+
+p.headerTitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding-left: 12px !important;
+  width: min-content !important;
+  line-height: 1.8rem !important;
+  letter-spacing: 0.1rem;
+}
+
+.countrySelectionBox {
+  padding: 15px 30px 15px 20px;
+}
+
+
+.countrySelectBox {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  /* height: 100%; */
+  overflow-y: hidden;
+  z-index: 111;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+
+  /* code to revive blur effect */
+  /* background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+
+
+.hamburger {
+ visibility: hidden;
+}
+
+
+
+
+.countryTitle {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.show-cases {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px 15px 20px;
+  border-bottom: 1px solid rgba(46, 38, 38, 0.272);
+
+}
+.pie-chart-box{
+  padding: 20px 30px 0px 20px;
+  border-bottom: 1px solid rgba(46, 38, 38, 0.272);
+}
+
+p.confirm-case-title {
+  background-image: linear-gradient(270deg,#65ebe2 0.00%,#6b9cff 100.00%);
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 10px !important;
+  width: max-content;
+}
+
+p.confirm-case-number {
+  font-size: 1.7rem;
+  font-weight: 600;
+  padding-top: 10px !important;
+}
+
+.list-of-countries {
+  flex-grow: 1;
+  padding: 15px 30px 15px 20px;
+  overflow-y: auto;
+  box-sizing: border-box; /* Ensures padding is included in height calculation */
+  /* Inner shadow */
+   box-shadow: inset 0px 20px 20px -20px rgba(255, 246, 246, 0.751), 
+              inset 0px -20px 20px -20px black; 
+}
+
+.card-of-countries {
+  padding: 0px 10px 15px 10px;
+  overflow-y: auto;
+  
+  
+}
+
+.country-data {
+  margin-top: 10px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ 
+}
+
+.case-deaths {
+  display: flex;
+}
+
+.deaths {
+  padding-left: 50px;
+}
+
+.country-name{
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.subtitles{
+font-size: 0.9rem;  
+padding: 0 !important;
+color:#9A9DA2;
+font-weight: 600;
+}
+.subtitle-number{
+font-size: 1.1rem;  
+padding: 0 !important;
+}
+
+.modalButtons{
+  position: absolute;
+  top:1rem;
+  right:3rem;
+  z-index: 112;
+}
+
+
+
+/* code for responsivness */
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  /* CSS */
+
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  /* CSS */
+  
+
+
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  /* CSS */
+
+  .logoBox{
+    padding: 15px 130px 15px 75px;
+  }
+
+  p.confirm-case-title {
+    
+    font-size: 0.9rem;
+    font-weight: 600;
+  
+  }
+  p.confirm-case-number {
+    font-size: 1.5rem;
+   
+  }
+  
+  
+.modalButtons{
+  position: absolute;
+  top:1rem;
+  right:1rem;
+  z-index: 112;
+}
+
+
+.countrySelectBox {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  height: 100%;
+  overflow-y: hidden;
+  z-index: 11;
+  left: -350px; /* Sidebar hidden by default */
+  width: 350px;
+  transition: left 0.3s ease-in-out;
+  background-color: #fff;
+}
+
+
+.countrySelectBox.open {
+  left: 0; /* Slide in the sidebar */
+}
+.hamburger {
+  visibility: visible;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 12;
+}
+
+.hamburger.open {
+  left: 315px; /* Adjust the position when the sidebar is open */
+}
+
+  
+}
