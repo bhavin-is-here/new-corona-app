@@ -4,8 +4,9 @@ import {HDSButton} from '@here/hds-react-components/Button';
 import {HDSModalContextProvider, useModal} from '@here/hds-react-components';
 import { action } from '@storybook/addon-actions';  // Import action
 import { createPortal } from 'react-dom';
-import { HDSModal } from '@here/hds-react-components/Modal';
+import { HDSModal } from '@here/hds-react-components';
 import Modal from '../modals/Modal';
+import AboutModals from '../modals/AboutModals';
 
 
 
@@ -47,6 +48,9 @@ const CircleButton = ({share,cross}) => {
            variant="floating"
            onClick={()=>setModalOpen(true)}
            size="small" />
+
+            {modalOpen &&  <AboutModals onChange={modalHandler} />}
+           {/* {modalOpen && <HDSModal onClose={() => setModalOpen(false)} ></HDSModal> } */}
          
           {/* {modalOpen && 
           <Modal
