@@ -288,7 +288,7 @@ const Map = () => {
   }, [latlongRedux, circleRefs]);
   
 
-  return <div id="mapContainer" style={{ width: '100%', height: '100vh', position: 'relative' }} />;
+  return <div id="mapContainer" style={{ width: '100%', height: '100dvh', position: 'relative' }} />;
 };
 
 export default Map;

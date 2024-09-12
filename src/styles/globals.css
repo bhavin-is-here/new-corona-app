@@ -157,6 +157,9 @@ font-weight: 600;
 font-size: 1.1rem;  
 padding: 0 !important;
 }
+.modalBtn{
+  margin-left: 10px;
+}
 
 .modalButtons{
   position: absolute;
@@ -165,29 +168,45 @@ padding: 0 !important;
   z-index: 112;
 }
 
+
 .modal{
+  position: relative;
+  z-index:999;
+  right:80%;
   background-color: #fff;
- border:1px solid black;
   width: 60%;
-  
-  margin-right: 100%;
+}
+.share-title{
+  width: 100% !important;
+  text-align: center;
 }
 .share-container{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
 
 .share-box{
-  margin: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 15px 15px 0px;
   width: 100px;
   height: 100px;
   border:1px solid black;
   border-radius: 50%;
 }
-
-
+.icons-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* border:1px solid black; */
+}
+.icons-box p{
+  padding: 0 !important;
+}
 
 
 /* code for responsivness */
