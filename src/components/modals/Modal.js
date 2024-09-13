@@ -11,7 +11,7 @@ const Modal = ({defaultModalProps,isOpen,onClose}) => {
         body={<div>Custom Modal Content</div>}
         onClose={onClose}
         style={{  ...defaultModalProps }}
-        // footer={footer}
+        
     />
   </HDSPortal>
   )
