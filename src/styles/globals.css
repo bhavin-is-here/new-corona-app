@@ -96,7 +96,8 @@ p.headerTitle {
 }
 
 p.confirm-case-title {
-  background-image: linear-gradient(270deg,#65ebe2 0.00%,#6b9cff 100.00%);
+  /* background-image: linear-gradient(270deg,#65ebe2 0.00%,#6b9cff 100.00%); */
+  background-color: #9A9DA2;
   font-size: 1.1rem;
   font-weight: 600;
   padding: 10px !important;
@@ -159,13 +160,32 @@ padding: 0 !important;
 }
 
 .modalButtons{
+  /* border:1px solid black; */
+  display: flex;
+  
+  justify-content: center;
   position: absolute;
   top:1rem;
   right:3rem;
   z-index: 112;
 }
+.socialIcons{
+  padding-right: 10px;
+}
 
+.share-box{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
 
+.social-icon{
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 /* code for responsivness */
 

@@ -1,18 +1,20 @@
 import React, { useState } from 'react'
 import {HDSButton} from '@here/hds-react-components/Button';
 import { HDSModal } from '@here/hds-react-components/Modal';
+import SocialIcons from '../SocialIcons';
 
-const CircleButton = ({share,cross}) => {
+const CircleButton = (props) => {
+  console.log("check")
 
   const [modalOpen, setModalOpen] = useState(false)
 
-  console.log("modelopen",modalOpen)
   return (
     <>
-    
+
+          <div data-theme="hds-web-product-light-theme" data-styles="hds" className='socialIcons'>
           <HDSButton
-           icon="share-Android"
-           iconCategory='discovery-sharing'
+           icon={props.icon}
+           iconCategory={props.iconCategory}
            iconRight=""
            label=""
            variant="floating"
@@ -20,7 +22,18 @@ const CircleButton = ({share,cross}) => {
            size="small" />
          
            {modalOpen 
-          && (<HDSModal onClose={(e) => setModalOpen(false)}></HDSModal>)}
+           && (
+            <HDSModal
+            header={<h4>Share this page</h4>}
+            // hide-header={true}
+            hide-footer={true}
+            body={ <SocialIcons/>}
+            className="custom-modal"
+            onClose={(e) => setModalOpen(false)}>     
+            </HDSModal>
+             )} 
+</div>
+
          
     </>      
   )

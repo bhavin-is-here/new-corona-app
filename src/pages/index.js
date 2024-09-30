@@ -2,10 +2,12 @@ import { useState } from 'react';
 import SideNavbar from '@/components/SideNavbar';
 import Map from '../components/Map';
 import '@here/hds-base/build/hds-styles.css';
-import ModalButtons from '@/components/ModalButtons';
+import '@here/hds-grid/build/hds-grid.css';
 import '@here/hds-iconlibrary/build/hds-iconlibrary-8px.css';
 import '@here/hds-iconlibrary/build/hds-iconlibrary-16px.css';
 import '@here/hds-iconlibrary/build/hds-iconlibrary-24px.css';
+import ModalButtons from '@/components/ModalButtons';
+
 
 export default function Home() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -25,7 +27,7 @@ export default function Home() {
           <Map />
          
           {/* code to show hamburger menu or the cross menu */}
-          <button className={`hamburger ${isSidebarOpen ? 'open' : ''}`} onClick={toggleSidebar}>
+           <button className={`hamburger ${isSidebarOpen ? 'open' : ''}`} onClick={toggleSidebar}>
             {isSidebarOpen ? '✕' : '☰'}
           </button>
         </div>
