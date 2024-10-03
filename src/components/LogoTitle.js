@@ -6,7 +6,9 @@ const LogoTitle = () => {
     <div className='logoBox'>
         <HDSLogo size="medium"></HDSLogo>
         {/* <hds-icon name="HERE-logo" category="core-ui" icon-style="outline" size="50px"></hds-icon> */}
-        <p className='headerTitle'>COVID-19 Visualization</p>
+        {/* <p className='headerTitle'>COVID-19 Visualization</p> */}
+        <p className='headerTitle'>Tracking Coronavirus COVID-19</p>
+
       </div>
 
   )

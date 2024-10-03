@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import {HDSButton} from '@here/hds-react-components/Button';
 import { HDSModal } from '@here/hds-react-components/Modal';
-import SocialIcons from '../SocialIcons';
+import SocialIcons from '../modals/SocialIcons';
+import AboutModal from '../modals/AboutModal';
 
-const CircleButton = (props) => {
+const AboutButton = (props) => {
   console.log("check")
 
   const [modalOpen, setModalOpen] = useState(false)
@@ -24,10 +25,10 @@ const CircleButton = (props) => {
            {modalOpen 
            && (
             <HDSModal
-            header={<h4>Share this page</h4>}
+            header={<h4>About</h4>}
             // hide-header={true}
             hide-footer={true}
-            body={ <SocialIcons/>}
+            body={ <AboutModal/>}
             className="custom-modal"
             onClose={(e) => setModalOpen(false)}>     
             </HDSModal>
@@ -39,4 +40,4 @@ const CircleButton = (props) => {
   )
 }
 
-export default CircleButton
+export default AboutButton

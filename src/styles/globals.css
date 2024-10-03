@@ -36,12 +36,14 @@
 }
 
 p.headerTitle {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: 600;
   padding-left: 12px !important;
-  width: min-content !important;
-  line-height: 1.8rem !important;
-  letter-spacing: 0.1rem;
+  width: 220px !important;
+  line-height: 1.6rem !important;
+  /* letter-spacing: 1px; */
+  /* border:1px solid black; */
+
 }
 
 .countrySelectionBox {
@@ -240,9 +242,9 @@ align-items: center;
   
   /* CSS */
 
-  .logoBox{
+  /* .logoBox{
     padding: 15px 130px 15px 75px;
-  }
+  } */
 
   p.confirm-case-title {
     
@@ -270,7 +272,7 @@ align-items: center;
   position: absolute;
   height: 100%;
   overflow-y: hidden;
-  z-index: 11;
+  z-index: 113;
   left: -350px; /* Sidebar hidden by default */
   width: 350px;
   transition: left 0.3s ease-in-out;
@@ -290,7 +292,7 @@ align-items: center;
   border: none;
   font-size: 30px;
   cursor: pointer;
-  z-index: 12;
+  z-index: 113;
 }
 
 .hamburger.open {
