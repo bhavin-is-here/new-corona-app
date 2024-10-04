@@ -7,6 +7,7 @@ import '@here/hds-iconlibrary/build/hds-iconlibrary-8px.css';
 import '@here/hds-iconlibrary/build/hds-iconlibrary-16px.css';
 import '@here/hds-iconlibrary/build/hds-iconlibrary-24px.css';
 import ModalButtons from '@/components/ModalButtons';
+import Seo from '@/components/modals/Seo';
 
 
 export default function Home() {
@@ -17,6 +18,8 @@ export default function Home() {
   };
 
   return (
+    <>
+    <Seo/>
     <div className="container">
       <main className="main">
         <div className="mapbox">
@@ -33,5 +36,6 @@ export default function Home() {
         </div>
       </main>
     </div>
+    </>
   );
 }

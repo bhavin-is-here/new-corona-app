@@ -207,7 +207,7 @@ const Map = () => {
             // Add labels for specific locations
             if (specificLocations.includes(location)) {
               const label = new H.map.DomMarker({ lat: lat, lng: long }, {
-                icon: new H.map.DomIcon(`<div style="color: black; background-color: white; padding: 2px; border: 1px solid black; border-radius: 3px;"> ${ formatNumberWithCommas(total_cases)} <br> Cases</div>`)
+                icon: new H.map.DomIcon(`<div style="color: black; background-color: white; padding: 7px;box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;  border-radius: 3px;"> ${ formatNumberWithCommas(total_cases)} <br> Cases</div>`)
               });
               map.addObject(label);
             }

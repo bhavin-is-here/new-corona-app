@@ -6,6 +6,7 @@ export default function Document() {
     <Html>
       <Head>
         <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.1/mapsjs-ui.css" />
+        <link rel="icon" href="/images/logo.svg" /> {/* Update this path if your favicon is a different type */}
 
         <script
           src={`https://js.api.here.com/v3/3.1/mapsjs-core.js`}
@@ -51,6 +52,7 @@ export default function Document() {
       </Head>
       <body>
         <div id="root">
+          
           <div data-theme="hds-web-product-light-theme" data-styles="hds">
             <Main />
             <NextScript />
