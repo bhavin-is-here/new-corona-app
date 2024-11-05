@@ -55,11 +55,11 @@ p.headerTitle {
   display: flex;
   justify-content: center;
   position: absolute;
-  /* height: 100%; */
   overflow-y: hidden;
   z-index: 111;
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 25%;
 
 
   /* code to revive blur effect */
@@ -84,26 +84,37 @@ p.headerTitle {
   font-size: 18px;
   font-weight: 500;
 }
-
+.pie-chart-box{
+  padding: 20px 30px 0px 20px;
+  border-bottom: 1px solid rgba(46, 38, 38, 0.272);
+}
 .show-cases {
+  /* border:1px solid black; */
   display: flex;
   justify-content: space-between;
   padding: 15px 30px 15px 20px;
   border-bottom: 1px solid rgba(46, 38, 38, 0.272);
 
 }
-.pie-chart-box{
-  padding: 20px 30px 0px 20px;
-  border-bottom: 1px solid rgba(46, 38, 38, 0.272);
+.show-case-box{
+  display: flex;
+  justify-content: space-between; 
+  flex-wrap: wrap;
+  /* border:1px solid black; */
+  width: 100%; 
+}
+
+.confirm-bg-box{
+  background-color: #9A9DA2;
 }
 
 p.confirm-case-title {
   /* background-image: linear-gradient(270deg,#65ebe2 0.00%,#6b9cff 100.00%); */
-  background-color: #9A9DA2;
   font-size: 1.1rem;
   font-weight: 600;
   padding: 10px !important;
   width: max-content;
+  /* width: 100%; */
 }
 
 p.confirm-case-number {
@@ -191,9 +202,12 @@ align-items: center;
 
 /* code for responsivness */
 
-@media (min-width: 1025px) and (max-width: 1280px) {
+@media (min-width: 1025px) and (max-width: 1435px) {
   
   /* CSS */
+  .confirm-cases{
+    width: 100%;
+  }
 
   
 }
@@ -206,7 +220,26 @@ align-items: center;
 @media (min-width: 768px) and (max-width: 1024px) {
   
   /* CSS */
-  
+  .countrySelectBox {
+    width: 350px;
+  }
+  .confirm-cases{
+    width: max-content;
+  }
+  .show-case-box{
+    flex-wrap: nowrap; 
+  }
+
+  p.confirm-case-title {
+  font-size: 0.9rem;
+  }
+
+p.confirm-case-number {
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding-top: 10px !important;
+}
+
 }
 
 /* 
@@ -217,6 +250,7 @@ align-items: center;
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   
   /* CSS */
+
   
 }
 
@@ -228,7 +262,20 @@ align-items: center;
 @media (min-width: 481px) and (max-width: 767px) {
   
   /* CSS */
-  
+/*   
+.countrySelectBox {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  height: 100%;
+  overflow-y: hidden;
+  z-index: 113;
+  left: -350px;
+  width: 350px;
+  transition: left 0.3s ease-in-out;
+  background-color: #fff;
+} */
+
 
 
 }
